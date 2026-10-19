@@ -4,7 +4,7 @@
   --gold:#D4A24C; --gold-ink:#8F621B; --teal:#0F5C5A; --teal-2:#0B4745; --damson:#6E2E47; --clay:#B4461C;
   --f-display:"Syne",system-ui,sans-serif; --f-text:"Manrope",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
   --pill:999px; --r2:14px; --wrap:1240px; --gutter:clamp(16px,4vw,40px);
-  color-scheme:light;
+  color-scheme:only light;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
