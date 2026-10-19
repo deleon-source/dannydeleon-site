@@ -1,0 +1,58 @@
+{
+  "_howto": "Edit text here; no code changes needed. releasesUrl pulls Danny's releases from the label site automatically. gigs = selected sets for bookers (newest first).",
+  "name": "Danny Deleon",
+  "tagline": "DJ · Producer · New York City",
+  "lede": "Afro, Soulful and Deep House from New York. Founder of Dandelion Musica.",
+  "genres": ["Afro House", "Soulful House", "Deep House", "Latin House", "Tech House"],
+  "bioShort": "Danny Deleon is a New York DJ and producer working the warm side of house music: Afro, Soulful, Deep and Latin grooves built for the dancefloor.",
+  "bioLong": [
+    "Danny Deleon has been behind the decks since 2012, coming up in New York's house scene and building sets that move between Afro percussion, soulful vocals and deep, rolling basslines.",
+    "In 2021 he started producing his own records, and in 2024 he founded Dandelion Musica, an independent label for Soulful, Afro, Deep, Latin and Tech House. His releases and remixes sell on Traxsource and Beatport, and Shine (Richie Dio Remix) reached #9 on Traxsource's Afro House chart on pre-order.",
+    "He releases new music every month and plays across New York, from club nights to open-air and cultural celebrations."
+  ],
+  "stats": [
+    {"k": "Since 2012", "v": "Behind the decks"},
+    {"k": "Since 2021", "v": "Producing"},
+    {"k": "#9", "v": "Traxsource Afro House · Shine (Richie Dio Remix)"},
+    {"k": "Monthly", "v": "New releases on Dandelion Musica"}
+  ],
+  "gigs": [
+    {"title": "Disco Tek NYC", "where": "Brooklyn, NY", "note": "Live set"},
+    {"title": "Rare Form Underground", "where": "Guest set", "note": ""},
+    {"title": "Dominican Independence Day", "where": "with LGG Events", "note": ""},
+    {"title": "Invasion Society / Afrodose x iBoat", "where": "New York", "note": ""}
+  ],
+  "bookingEmail": "bookings@dandelionmusica.com",
+  "releasesUrl": "https://dandelionmusica.com/data/releases.json",
+  "labelBase": "https://dandelionmusica.com/",
+  "liveSetsPlaylist": "PLsGnWuozZWwXduj6TzZTW_K9QX9zm9nQ2",
+  "pixelId": "6256459517799445",
+  "liveDomain": "dannydeleon.com",
+  "joinForm": {
+    "action": "https://docs.google.com/forms/d/e/1FAIpQLSdqIX7RV5hbKYhXybXvYmr0U5wH5kt9y6bHk5RHGVGhmqkkLA/formResponse",
+    "emailField": "entry.1492796727"
+  },
+  "listen": [
+    {"label": "Spotify", "url": "https://open.spotify.com/artist/2L7urxohEpC0dwR5FsZLcM"},
+    {"label": "Apple Music", "url": "https://music.apple.com/us/artist/danny-deleon/1467808615"},
+    {"label": "Traxsource", "url": "https://www.traxsource.com/artist/711025/danny-deleon"},
+    {"label": "Beatport", "url": "https://www.beatport.com/artist/danny-deleon/1047292"},
+    {"label": "SoundCloud", "url": "https://soundcloud.com/dannydeleonmusic"},
+    {"label": "Bandcamp", "url": "https://dannydeleon.bandcamp.com/"}
+  ],
+  "social": [
+    {"label": "Instagram", "url": "https://www.instagram.com/dannydeleon__/"},
+    {"label": "TikTok", "url": "https://www.tiktok.com/@dannydeleon___"},
+    {"label": "YouTube", "url": "https://www.youtube.com/@Danny_Deleon"},
+    {"label": "Facebook", "url": "https://www.facebook.com/DannyDeleonDj/"},
+    {"label": "Dandelion Musica", "url": "https://dandelionmusica.com/"}
+  ],
+  "photos": [
+    {"src": "photos/hero.jpg", "alt": "Danny Deleon in a denim jacket against a teal graffiti wall"},
+    {"src": "photos/dj-booth.jpg", "alt": "Danny Deleon DJing on Pioneer decks outdoors"},
+    {"src": "photos/portrait.jpg", "alt": "Danny Deleon smiling in sunglasses in front of graffiti"},
+    {"src": "photos/dj-water.jpg", "alt": "Danny Deleon playing a set by the water"},
+    {"src": "photos/studio.jpg", "alt": "Danny Deleon with his hands by his ears, listening"},
+    {"src": "photos/city.jpg", "alt": "Danny Deleon by the river with the city skyline behind him"}
+  ]
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Danny Deleon — DJ & Producer, New York</title>
+<meta name="description" content="Danny Deleon is a New York DJ and producer of Afro, Soulful and Deep House, and founder of Dandelion Musica. Music, live sets, press kit and bookings.">
+<meta property="og:title" content="Danny Deleon — DJ & Producer, New York">
+<meta property="og:description" content="Afro, Soulful and Deep House from New York. Music, live sets and bookings.">
+<meta property="og:image" content="https://dannydeleon.com/photos/hero.jpg">
+<meta property="og:url" content="https://dannydeleon.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="photos/portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=1">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MusicGroup","name":"Danny Deleon","genre":["Afro House","Soulful House","Deep House"],"url":"https://dannydeleon.com/","sameAs":["https://open.spotify.com/artist/2L7urxohEpC0dwR5FsZLcM","https://www.instagram.com/dannydeleon__/","https://www.youtube.com/@Danny_Deleon","https://soundcloud.com/dannydeleonmusic"]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#main">Danny Deleon</a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        <li><a href="#music">Music</a></li>
+        <li><a href="#sets">Live sets</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#press">Press kit</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-teal btn-sm" href="#book">Book Danny</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-name">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="kicker mono" id="tagline"></p>
+        <h1 id="hero-name">Danny<br><span>Deleon</span></h1>
+        <p class="lede" id="lede"></p>
+        <div class="hero-cta">
+          <a class="btn btn-teal btn-lg" href="#book">Book Danny</a>
+          <a class="btn btn-ghost btn-lg" href="#music">Listen</a>
+        </div>
+        <div class="latest" id="latest" hidden>
+          <img id="latest-cover" alt="" width="88" height="88">
+          <div class="latest-txt">
+            <p class="mono latest-chip" id="latest-chip"></p>
+            <p class="latest-title" id="latest-title"></p>
+            <p class="latest-artists" id="latest-artists"></p>
+          </div>
+          <div class="latest-actions" id="latest-actions"></div>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="photos/hero.jpg" alt="Danny Deleon in a denim jacket against a teal graffiti wall" width="1169" height="1600" fetchpriority="high">
+      </figure>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Highlights">
+    <div class="wrap"><ul class="stats-list" id="stats"></ul></div>
+  </section>
+
+  <section id="music" class="section" aria-labelledby="music-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="music-h">Music</h2><p class="sec-sub">Original records and remixes, released on Dandelion Musica.</p></div>
+      <ul class="releases" id="releases"></ul>
+      <div class="listen-row" id="listen"></div>
+    </div>
+  </section>
+
+  <section id="sets" class="section section-alt" aria-labelledby="sets-h">
+    <div class="wrap sets-in">
+      <div>
+        <h2 id="sets-h">Live sets</h2>
+        <p class="sec-sub">Full DJ sets from New York nights. Press play and hear how a Danny Deleon set moves.</p>
+        <div class="set-links" id="set-links"></div>
+      </div>
+      <div class="video" id="video"></div>
+    </div>
+  </section>
+
+  <section id="about" class="section" aria-labelledby="about-h">
+    <div class="wrap about-in">
+      <figure class="about-photo"><img src="photos/dj-booth.jpg" alt="Danny Deleon DJing on Pioneer decks outdoors" width="796" height="1200" loading="lazy"></figure>
+      <div>
+        <h2 id="about-h">About</h2>
+        <div class="bio" id="bio"></div>
+        <ul class="genres" id="genres" aria-label="Genres"></ul>
+        <h3 class="gigs-h">Selected sets</h3>
+        <ul class="gigs" id="gigs"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="press" class="section section-alt" aria-labelledby="press-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="press-h">Press kit</h2><p class="sec-sub">Photos and bio for promoters, venues and press. Click a photo to open the full size.</p></div>
+      <ul class="gallery" id="gallery"></ul>
+      <div class="press-bio">
+        <h3>Short bio</h3>
+        <p id="bio-short"></p>
+        <button class="btn btn-ghost btn-sm" type="button" id="copy-bio">Copy short bio</button>
+        <p class="sr-only" role="status" id="copy-status"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="book" aria-labelledby="book-h">
+    <div class="wrap book-in">
+      <div>
+        <p class="kicker mono">Bookings</p>
+        <h2 id="book-h">Book Danny Deleon</h2>
+        <p class="book-sub">Clubs, festivals, private events and cultural celebrations. Send the date, venue, city and set length, and you'll hear back fast.</p>
+      </div>
+      <div class="book-card">
+        <a class="btn btn-gold btn-lg" id="book-btn" href="#">Email for bookings</a>
+        <p class="book-mail mono" id="book-mail"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="join" aria-labelledby="join-h">
+    <div class="wrap join-in">
+      <div>
+        <h2 id="join-h">New music, first</h2>
+        <p>One email when Danny drops something new. No spam.</p>
+      </div>
+      <form class="join-form" id="join-form" novalidate>
+        <label for="join-email" class="sr-only">Email address</label>
+        <input id="join-email" type="email" name="email" autocomplete="email" placeholder="you@email.com" required aria-describedby="join-msg">
+        <button class="btn btn-teal" type="submit">Join</button>
+        <p class="join-msg" id="join-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <p class="foot-name">Danny Deleon</p>
+      <p class="foot-note">Releases on <a href="https://dandelionmusica.com/" target="_blank" rel="noopener">Dandelion Musica<span class="sr-only"> (opens in new tab)</span></a>. Need this page in another format? Email <a id="foot-mail" href="#"></a>.</p>
+    </div>
+    <ul class="social" id="social" aria-label="Danny Deleon on social media"></ul>
+  </div>
+</footer>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>
