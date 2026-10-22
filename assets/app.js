@@ -20,7 +20,7 @@
     $("gigs").innerHTML = s.gigs.map(function (g) { return "<li><b>" + esc(g.title) + "</b><span>" + esc([g.where, g.note].filter(Boolean).join(" · ")) + "</span></li>"; }).join("");
     $("listen").innerHTML = s.listen.map(function (l) { return ext(l.url, l.label, "btn btn-ghost btn-sm"); }).join("");
     $("social").innerHTML = s.social.map(function (l) { return "<li>" + ext(l.url, l.label) + "</li>"; }).join("");
-    $("gallery").innerHTML = s.photos.map(function (p) { return '<li><a href="' + esc(p.src) + '" target="_blank" rel="noopener"><img src="' + esc(p.src) + '" alt="' + esc(p.alt) + '" loading="lazy"><span class="sr-only"> (opens full size in new tab)</span></a></li>'; }).join("");
+    $("gallery").innerHTML = s.photos.map(function (p) { return '<li><a href="' + esc(p.src) + '" target="_blank" rel="noopener"><img src="' + esc(p.src.replace("photos/", "photos/web/").replace(/\.jpg$/, ".webp")) + '" alt="' + esc(p.alt) + '" loading="lazy"><span class="sr-only"> (opens full size in new tab)</span></a></li>'; }).join("");
     var mail = "mailto:" + s.bookingEmail + "?subject=" + encodeURIComponent("Booking inquiry: Danny Deleon") + "&body=" + encodeURIComponent("Date:\nVenue:\nCity:\nSet length:\nEvent details:\n");
     $("book-btn").href = mail; $("book-mail").textContent = s.bookingEmail;
     $("foot-mail").href = "mailto:" + s.bookingEmail; $("foot-mail").textContent = s.bookingEmail;
@@ -28,7 +28,7 @@
     // Click-to-load video keeps YouTube from loading trackers until the visitor asks for it.
     var v = $("video");
     v.innerHTML = '<button type="button" class="btn btn-gold btn-lg" style="position:absolute;inset:auto;left:50%;top:50%;transform:translate(-50%,-50%)">Play live sets</button>';
-    v.style.backgroundImage = "linear-gradient(rgba(23,19,15,.35),rgba(23,19,15,.35)),url(photos/dj-water.jpg)"; v.style.backgroundSize = "cover"; v.style.backgroundPosition = "center";
+    v.style.backgroundImage = "linear-gradient(rgba(23,19,15,.35),rgba(23,19,15,.35)),url(photos/web/dj-water.webp)"; v.style.backgroundSize = "cover"; v.style.backgroundPosition = "center";
     v.querySelector("button").addEventListener("click", function () {
       v.innerHTML = '<iframe title="Danny Deleon live sets playlist" src="https://www.youtube-nocookie.com/embed/videoseries?list=' + esc(s.liveSetsPlaylist) + '&autoplay=1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
     });
