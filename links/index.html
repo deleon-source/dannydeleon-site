@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Danny Deleon · Links</title>
+<meta name="description" content="Danny Deleon: monthly DJ chart, new music, full DJ sets, bookings and Dandelion Musica.">
+<meta property="og:title" content="Danny Deleon · Links">
+<meta property="og:description" content="Monthly DJ chart, new music, full DJ sets and bookings.">
+<meta property="og:image" content="https://dannydeleon.com/assets/selects/2026-11/og.jpg">
+<meta property="og:url" content="https://dannydeleon.com/links/">
+<link rel="canonical" href="https://dannydeleon.com/links/">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="../assets/club.css?v=1">
+</head>
+<body>
+<main class="wrap">
+  <div style="height:18px"></div>
+  <img class="logo" src="../assets/selects/logo.png" alt="Danny Deleon" width="840" height="102">
+  <p class="sub" style="margin:14px 0 30px">DJ · Producer · Label owner · NYC</p>
+
+  <div class="stack">
+    <a class="card" id="selects-card" href="../selects/">
+      <img id="selects-img" src="../assets/selects/2026-11/chart.jpg" alt="">
+      <div><b>Danny Deleon Selects</b><span id="selects-sub">My monthly DJ chart · November 2026</span></div>
+    </a>
+    <a class="card" href="https://dandelionmusica.com/music/as-we-live/">
+      <img src="https://dandelionmusica.com/covers/as-we-live.jpg" alt="">
+      <div><b>As We Live</b><span>New release · feat. Morris Revy · Buy & stream</span></div>
+    </a>
+    <a class="btn btn-org" href="https://www.youtube.com/@Danny_Deleon">Full DJ sets on YouTube</a>
+    <a class="btn btn-line" href="https://dannydeleon.com/#book">Book Danny</a>
+    <a class="btn btn-line" href="https://dandelionmusica.com/">Dandelion Musica</a>
+    <a class="btn btn-line" href="https://dannydeleon.com/">dannydeleon.com</a>
+  </div>
+
+  <p class="foot">Soulful · Afro · Deep House</p>
+</main>
+<script>
+fetch("../data/selects.json").then(r=>r.json()).then(d=>{const m=d.months&&d.months[0];if(!m)return;
+  document.getElementById("selects-sub").textContent="My monthly DJ chart · "+m.title;
+  document.getElementById("selects-img").src="../"+m.image;}).catch(()=>{});
+fetch("../data/site.json").then(r=>r.json()).then(s=>{
+  if(location.hostname.replace(/^www\./,"")!==s.liveDomain||!s.pixelId)return;
+  !function(f,b,e,v,n,t,x){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;x=b.getElementsByTagName(e)[0];x.parentNode.insertBefore(t,x)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
+  fbq("init",s.pixelId);fbq("track","PageView");
+  document.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>fbq("trackCustom","LinkClick",{content_name:(a.textContent||"").trim().slice(0,60)})));
+}).catch(()=>{});
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+/* Club look for /selects and /links (black, orange glow, Anton + Space Grotesk). */
+:root{--bg:#0a0807;--panel:#15100d;--line:#2a1f19;--ink:#f5f2ec;--muted:#9a948c;--org:#ff601c;--hot:#ff8c28}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg)}
+body{min-height:100vh;color:var(--ink);font:500 17px/1.5 "Space Grotesk",system-ui,sans-serif;
+  background:radial-gradient(60% 40% at 15% 5%,rgba(255,70,20,.28),transparent 70%),
+             radial-gradient(55% 45% at 90% 60%,rgba(160,20,60,.25),transparent 70%),
+             radial-gradient(50% 35% at 50% 100%,rgba(255,120,30,.18),transparent 70%),var(--bg)}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:28px 16px 64px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:28px}
+.top a{font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+.top a:hover{color:var(--ink)}
+.logo{display:block;width:min(420px,80%);height:auto;margin:0 auto;filter:drop-shadow(0 0 14px rgba(255,255,255,.45))}
+.eyebrow{font-weight:700;font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:var(--org);text-align:center}
+.h-anton{font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:.02em;line-height:1}
+.selects{font-size:clamp(64px,16vw,124px);color:var(--org);text-align:center;text-shadow:0 0 22px rgba(255,140,40,.55)}
+.sub{color:var(--muted);text-align:center;letter-spacing:.18em;text-transform:uppercase;font-size:13px;font-weight:700}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 22px;border-radius:999px;
+  font-family:Anton,Impact,sans-serif;font-size:22px;letter-spacing:.04em;text-decoration:none;text-align:center;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-org{background:var(--org);color:#0a0807;box-shadow:0 0 24px rgba(255,96,28,.35)}
+.btn-org:hover{box-shadow:0 0 34px rgba(255,96,28,.6)}
+.btn-line{border:1.5px solid var(--line);background:rgba(255,255,255,.03);color:var(--ink)}
+.btn-line:hover{border-color:var(--org)}
+.btn.off{opacity:.5;pointer-events:none}
+.stack{display:grid;gap:14px}
+.card{display:flex;gap:14px;align-items:center;padding:12px;border:1.5px solid var(--line);border-radius:16px;background:rgba(255,255,255,.03);text-decoration:none}
+.card:hover{border-color:var(--org)}
+.card img{width:64px;height:64px;border-radius:10px;object-fit:cover;flex:none}
+.card b{display:block;font-family:Anton,Impact,sans-serif;font-weight:400;font-size:22px;letter-spacing:.03em;line-height:1.1}
+.card span{color:var(--muted);font-size:14px}
+.track{display:grid;grid-template-columns:44px 56px 1fr;gap:12px;align-items:center;padding:10px 4px;border-bottom:1px solid var(--line);text-decoration:none}
+.track:hover .tt{color:var(--org)}
+.track .n{font-family:Anton,Impact,sans-serif;font-size:28px;color:var(--org);text-align:center}
+.track img{width:56px;height:56px;border-radius:8px;object-fit:cover}
+.track .ta{font-weight:700;text-transform:uppercase;font-size:14px;letter-spacing:.04em}
+.track .tt{font-size:15px;color:var(--ink)}
+.track .tl{font-size:12px;color:var(--muted)}
+.lead .track:first-child img{outline:2px solid var(--org);outline-offset:1px}
+.foot{margin-top:40px;text-align:center;color:var(--muted);font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.archive h3{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:26px;margin:36px 0 10px}
+@media (max-width:420px){.btn{font-size:19px}.track{grid-template-columns:34px 48px 1fr;gap:10px}.track img{width:48px;height:48px}}

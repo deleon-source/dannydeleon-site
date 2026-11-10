@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Danny Deleon Selects · Monthly DJ Chart</title>
+<meta name="description" content="Danny Deleon Selects: the soulful and Afro house records Danny is playing this month, in set order, with links to buy on Traxsource and the full DJ set.">
+<meta property="og:title" content="Danny Deleon Selects · Monthly DJ Chart">
+<meta property="og:description" content="Soulful & Afro House. The records I'm playing this month, in set order.">
+<meta property="og:image" content="https://dannydeleon.com/assets/selects/2026-11/og.jpg">
+<meta property="og:url" content="https://dannydeleon.com/selects/">
+<link rel="canonical" href="https://dannydeleon.com/selects/">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="../assets/club.css?v=1">
+</head>
+<body>
+<main class="wrap">
+  <nav class="top" aria-label="Site"><a href="../">← dannydeleon.com</a><a href="../links/">Links</a></nav>
+  <p class="eyebrow" id="eyebrow">Traxsource DJ chart</p>
+  <img class="logo" src="../assets/selects/logo.png" alt="Danny Deleon" width="840" height="102" style="margin-top:14px">
+  <h1 class="h-anton selects">SELECTS</h1>
+  <p class="sub" id="sub">Soulful &amp; Afro House</p>
+
+  <div class="stack" style="margin:26px 0 8px">
+    <a class="btn btn-org" id="chart-btn" href="#">Buy the chart on Traxsource</a>
+    <a class="btn btn-line off" id="yt-btn" href="#">Full DJ set · coming soon on YouTube</a>
+  </div>
+
+  <div class="lead" id="tracks" style="margin-top:22px"></div>
+  <div class="archive" id="archive"></div>
+
+  <p class="foot">Released on <a href="https://dandelionmusica.com/">Dandelion Musica</a> · <a href="../#book">Book Danny</a></p>
+</main>
+<script>
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const rows=m=>m.tracks.map((t,i)=>`<a class="track" href="${esc(t.url)}" target="_blank" rel="noopener"><span class="n">${String(i+1).padStart(2,"0")}</span><img src="../${esc(t.cover)}" alt="" loading="lazy" width="56" height="56"><span><span class="ta">${esc(t.artist)}</span><br><span class="tt">${esc(t.title)}</span><br><span class="tl">${esc(t.label)}</span></span></a>`).join("");
+fetch("../data/selects.json").then(r=>r.json()).then(d=>{
+  const [m,...old]=d.months;
+  document.getElementById("eyebrow").textContent="Traxsource DJ chart · "+m.title;
+  document.getElementById("sub").textContent="Soulful & Afro House · "+m.tracks.length+" tracks · in set order";
+  document.getElementById("chart-btn").href=m.chart;
+  const yt=document.getElementById("yt-btn");
+  if(m.youtube){yt.href=m.youtube;yt.textContent="Watch the full DJ set on YouTube";yt.classList.remove("off");}
+  document.getElementById("tracks").innerHTML=rows(m);
+  document.getElementById("archive").innerHTML=old.map(o=>`<h3>${esc(o.title)}</h3><p style="margin-bottom:8px"><a href="${esc(o.chart)}">Chart</a>${o.youtube?` · <a href="${esc(o.youtube)}">DJ set</a>`:""}</p>`+rows(o)).join("");
+}).catch(()=>{document.getElementById("tracks").textContent="Couldn't load the chart. Try again in a moment."});
+fetch("../data/site.json").then(r=>r.json()).then(s=>{
+  if(location.hostname.replace(/^www\./,"")!==s.liveDomain||!s.pixelId)return;
+  !function(f,b,e,v,n,t,x){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;x=b.getElementsByTagName(e)[0];x.parentNode.insertBefore(t,x)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
+  fbq("init",s.pixelId);fbq("track","PageView",{});fbq("track","ViewContent",{content_name:"Danny Deleon Selects"});
+}).catch(()=>{});
+</script>
+</body>
+</html>

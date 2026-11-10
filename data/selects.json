@@ -1,0 +1,112 @@
+{
+  "_howto": "Newest month first. Add a month object at the top each month; set youtube to the set's link once it is live (empty = 'coming soon'). Covers: assets/selects/<slug>/NN.jpg.",
+  "months": [
+    {
+      "slug": "2026-11",
+      "title": "November 2026",
+      "chart": "https://www.traxsource.com/title/2916064/Danny-Deleon-Selects-Soulful-Afro-House-November-2026",
+      "youtube": "",
+      "image": "assets/selects/2026-11/chart.jpg",
+      "tracks": [
+        {
+          "artist": "Danny Deleon, Morris Revy",
+          "title": "As We Live (Original)",
+          "label": "DanDeLion Musica",
+          "url": "https://www.traxsource.com/track/15156064/as-we-live-original",
+          "cover": "assets/selects/2026-11/01.jpg"
+        },
+        {
+          "artist": "Louie Vega, Josh Milan, 2SoulFusion",
+          "title": "Shout! (2SoulFusion Main Mix)",
+          "label": "Vega Records",
+          "url": "https://www.traxsource.com/track/15069306/shout-2soulfusion-main-mix",
+          "cover": "assets/selects/2026-11/02.jpg"
+        },
+        {
+          "artist": "BeBe Winans",
+          "title": "It's All Good (DJ Spen & Charles Dockins Remix)",
+          "label": "Nervous",
+          "url": "https://www.traxsource.com/track/15169799/its-all-good-feat-debbie-winans-lowe-and-korean-soul-dj-spen-and-charles-dockins-remix",
+          "cover": "assets/selects/2026-11/03.jpg"
+        },
+        {
+          "artist": "Doug Gomez",
+          "title": "Yeah! (Original Red Room Whip)",
+          "label": "Merecumbe",
+          "url": "https://www.traxsource.com/track/15119501/yeah-original-red-room-whip",
+          "cover": "assets/selects/2026-11/04.jpg"
+        },
+        {
+          "artist": "Jon Mavek, Morris Revy, Precious James",
+          "title": "Udo Nile (Caveman Mix)",
+          "label": "Mavek Recordings",
+          "url": "https://www.traxsource.com/track/14930084/udo-nile-peace-throughout-the-world-caveman-mix",
+          "cover": "assets/selects/2026-11/05.jpg"
+        },
+        {
+          "artist": "Richie Dio",
+          "title": "Midnight Riff",
+          "label": "Jazz In Da House",
+          "url": "https://www.traxsource.com/track/14975405/midnight-riff-original-mix",
+          "cover": "assets/selects/2026-11/06.jpg"
+        },
+        {
+          "artist": "Oscar P",
+          "title": "Mamma Said",
+          "label": "Open Bar Music",
+          "url": "https://www.traxsource.com/track/15062820/mamma-said",
+          "cover": "assets/selects/2026-11/07.jpg"
+        },
+        {
+          "artist": "Mike Risk, Bluey Robinson",
+          "title": "Your Love",
+          "label": "MWR.Music",
+          "url": "https://www.traxsource.com/track/15116100/your-love",
+          "cover": "assets/selects/2026-11/08.jpg"
+        },
+        {
+          "artist": "Masaki Morii",
+          "title": "Untitled Dub 1",
+          "label": "M2SOUL Music",
+          "url": "https://www.traxsource.com/track/15019328/untitled-dub-1",
+          "cover": "assets/selects/2026-11/09.jpg"
+        },
+        {
+          "artist": "Lalah Hathaway, J. Ivy",
+          "title": "47th Street (Terry Hunter Remix)",
+          "label": "SoNo",
+          "url": "https://www.traxsource.com/track/15144022/47th-street-terry-hunter-remix",
+          "cover": "assets/selects/2026-11/10.jpg"
+        },
+        {
+          "artist": "Jose Sanchez",
+          "title": "Ancestral Call",
+          "label": "Afro Madiba Records",
+          "url": "https://www.traxsource.com/track/14646901/ancestral-call",
+          "cover": "assets/selects/2026-11/11.jpg"
+        },
+        {
+          "artist": "Desiree, Marieme",
+          "title": "Heartbreaker (Extended)",
+          "label": "Ninja Tune",
+          "url": "https://www.traxsource.com/track/15173253/heartbreaker-extended",
+          "cover": "assets/selects/2026-11/12.jpg"
+        },
+        {
+          "artist": "Stacy Kidd",
+          "title": "I Love U (Afro Mix)",
+          "label": "House 4 Life",
+          "url": "https://www.traxsource.com/track/14384124/i-love-u-afro-mix",
+          "cover": "assets/selects/2026-11/13.jpg"
+        },
+        {
+          "artist": "Mike Flexx",
+          "title": "Ha Ya (Afro Mix)",
+          "label": "T's Box",
+          "url": "https://www.traxsource.com/track/15122339/ha-ya-afro-mix",
+          "cover": "assets/selects/2026-11/14.jpg"
+        }
+      ]
+    }
+  ]
+}
