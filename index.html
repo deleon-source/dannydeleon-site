@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="assets/style.css?v=2">
+<link rel="stylesheet" href="assets/style.css?v=3">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"MusicGroup","name":"Danny Deleon","genre":["Afro House","Soulful House","Deep House"],"url":"https://dannydeleon.com/","sameAs":["https://open.spotify.com/artist/2L7urxohEpC0dwR5FsZLcM","https://www.instagram.com/dannydeleon__/","https://www.youtube.com/@Danny_Deleon","https://soundcloud.com/dannydeleonmusic"]}</script>
 </head>
 <body>
@@ -40,6 +40,26 @@
 </header>
 
 <main id="main">
+  <a class="selects-strip" id="selects-strip" href="selects/" aria-label="Danny Deleon Selects, monthly DJ chart">
+    <span class="wrap ss-in">
+      <img src="assets/selects/2026-11/chart.jpg" id="ss-img" alt="" width="64" height="64">
+      <span class="ss-txt"><span class="ss-k">New<span class="ss-long"> · Monthly</span> DJ chart</span><span class="ss-t"><span class="ss-dd">Danny Deleon </span><b>Selects</b> · <span id="ss-month">November 2026</span></span></span>
+      <span class="ss-go"><span class="ss-long">See the chart </span>→</span>
+    </span>
+  </a>
+  <style>
+    .selects-strip{display:block;text-decoration:none;color:#f5f2ec;background:radial-gradient(60% 140% at 10% 0%,rgba(255,70,20,.35),transparent 70%),#0a0807;border-bottom:2px solid #ff601c}
+    .ss-in{display:flex;align-items:center;gap:16px;padding-top:12px;padding-bottom:12px}
+    .selects-strip img{width:64px;height:64px;border-radius:8px;flex:none;object-fit:cover}
+    .ss-txt{display:flex;flex-direction:column;gap:2px;min-width:0}
+    .ss-k{font:700 12px/1.2 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:#ff8c28}
+    .ss-t{font:800 clamp(18px,3.4vw,26px)/1.1 var(--f-display);letter-spacing:-.01em}
+    .ss-t b{color:#ff601c}
+    .ss-go{margin-left:auto;flex:none;background:#ff601c;color:#0a0807;font:700 15px/1 var(--f-text);padding:13px 20px;border-radius:999px;white-space:nowrap}
+    .selects-strip:hover .ss-go{box-shadow:0 0 22px rgba(255,96,28,.6)}
+    @media (max-width:560px){.ss-in{gap:12px}.ss-dd,.ss-long{display:none}.ss-t{font-size:19px}.ss-go{padding:12px 16px;font-size:18px}.ss-k{font-size:10px;letter-spacing:.12em}.selects-strip img{width:52px;height:52px}}
+  </style>
+  <script>fetch("data/selects.json").then(r=>r.json()).then(d=>{const m=d.months[0];document.getElementById("ss-month").textContent=m.title;document.getElementById("ss-img").src=m.image;}).catch(()=>{});</script>
   <section class="hero" aria-labelledby="hero-name">
     <div class="wrap hero-in">
       <div class="hero-copy">

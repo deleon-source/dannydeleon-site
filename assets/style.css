@@ -40,7 +40,7 @@ p{margin:0}
 .nav{display:flex;gap:26px;list-style:none;margin:0;padding:0}
 .nav a{text-decoration:none;font-weight:700;font-size:15px;color:var(--muted)}
 .nav a:hover{color:var(--ink)}
-@media (max-width:760px){.nav{display:none}}
+@media (max-width:760px){.top-in{flex-wrap:wrap;height:auto;padding-top:10px;padding-bottom:0;row-gap:6px}.top nav{order:3;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}.top nav::-webkit-scrollbar{display:none}.nav{gap:22px;padding:6px 0 10px;white-space:nowrap}.nav a{font-size:15px}.brand{margin-right:auto;flex:1 1 0;min-width:0}}
 
 /* hero */
 .hero{padding:clamp(28px,5vw,64px) 0 clamp(36px,6vw,72px);background:radial-gradient(900px 600px at 85% 10%,rgba(15,92,90,.10),transparent 60%),radial-gradient(800px 500px at 0% 100%,rgba(212,162,76,.16),transparent 60%)}
